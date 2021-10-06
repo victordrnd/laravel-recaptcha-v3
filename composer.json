@@ -1,12 +1,12 @@
 {
-    "name": "huangdijia/laravel-recaptcha-v3",
+    "name": "victordrnd/laravel-recaptcha-v3",
     "description": "recaptcha-v3 for laravel",
     "type": "library",
     "keywords": [
         "laravel",
         "recaptcha-v3"
     ],
-    "homepage": "https://github.com/huangdijia/laravel-recaptcha-v3",
+    "homepage": "https://github.com/victordrnd/laravel-recaptcha-v3",
     "license": "MIT",
     "authors": [{
         "name": "huangdijia",
