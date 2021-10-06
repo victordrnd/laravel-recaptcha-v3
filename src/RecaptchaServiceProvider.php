@@ -25,7 +25,7 @@ class RecaptchaServiceProvider extends ServiceProvider
         // v2
         $this->app['validator']->extend('recaptcha-v2', function ($attribute, $value, $parameters, $validator) {
             $app       = Container::getInstance();
-            $recaptcha = $app['recaptcha-v2']->setExpectedHostname($app['request']->getHttpHost());
+            $recaptcha = $app['recaptcha-v2']->setExpectedHostname($app['request']->getHost());
 
             if ($parameters[0] ?? '') {
                 $recaptcha->setExpectedAction($parameters[0]);
@@ -41,7 +41,7 @@ class RecaptchaServiceProvider extends ServiceProvider
         // v3
         $this->app['validator']->extend('recaptcha', function ($attribute, $value, $parameters, $validator) {
             $app       = Container::getInstance();
-            $recaptcha = $app['recaptcha-v3']->setExpectedHostname($app['request']->getHttpHost());
+            $recaptcha = $app['recaptcha-v3']->setExpectedHostname($app['request']->getHost());
 
             if ($parameters[0] ?? '') {
                 $recaptcha->setExpectedAction($parameters[0]);
@@ -56,7 +56,7 @@ class RecaptchaServiceProvider extends ServiceProvider
 
         $this->app['validator']->extend('recaptcha-v3', function ($attribute, $value, $parameters, $validator) {
             $app       = Container::getInstance();
-            $recaptcha = $app['recaptcha-v3']->setExpectedHostname($app['request']->getHttpHost());
+            $recaptcha = $app['recaptcha-v3']->setExpectedHostname($app['request']->getHost());
 
             if ($parameters[0] ?? '') {
                 $recaptcha->setExpectedAction($parameters[0]);
