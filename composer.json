@@ -24,13 +24,13 @@
     "autoload": {
         "files": [],
         "psr-4": {
-            "Huangdijia\\Recaptcha\\": "src/"
+            "Victordrnd\\Recaptcha\\": "src/"
         }
     },
     "extra": {
         "laravel": {
             "providers": [
-                "Huangdijia\\Recaptcha\\RecaptchaServiceProvider"
+                "Victordrnd\\Recaptcha\\RecaptchaServiceProvider"
             ]
         }
     }
