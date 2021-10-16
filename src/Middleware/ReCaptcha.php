@@ -20,7 +20,7 @@ class ReCaptcha
         if (config('recaptcha-v3.enable', true)) {
 
             $hostname  = $hostname ?: $request->getHost();
-            $recaptcha = app('recaptcha-v3')->setExpectedHostname($hostname);
+            $recaptcha = app('recaptcha-v3');
 
             if ($action) {
                 $recaptcha->setExpectedAction($action);
